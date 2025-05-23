@@ -126,6 +126,8 @@ console.log(`Valores pela metade: ${metades.join(', ')}`);
 
 let comoTexto = numeros.map(n => `${n} pts`);
 console.log(`Como texto: ${comoTexto.join(', ')}`);
+console.log('----------------------');
+
 
 // filter() - Cria um novo array com elementos que passam em uma condicao
 
@@ -134,14 +136,18 @@ let playlist12 = ['Funk', 'Hip-Hop', 'Pop', 'Rock', 'Jazz'];
 let playlistFiltrada = playlist12.filter(musica => musica.length > 4);
 
 console.log("Playlist filtrada (músicas com mais de 4 letras):", playlistFiltrada);
+console.log('--------------------------');
+
 
 // sort() - Ordena os elementos do array
 
 let playlist13 = ['Funk', 'Hip-Hop', 'Pop', 'Rock', 'Jazz'];
 
-let playlistOrdenada = playlis13t.sort();
+let playlistOrdenada = playlist13.sort();
 
 console.log("Playlist ordenada:", playlistOrdenada);
+console.log('---------------------------------');
+
 
 // reverse() - Inverte a ordem dos elementos do array
 
@@ -149,4 +155,21 @@ let playlist14 = ['Funk', 'Hip-Hop', 'Pop', 'Rock', 'Jazz'];
 
 let playlistInvertida = playlist14.reverse();
 
-console.log("Playlist invertida:", playlistInvertida);
+console.log("Playlist invertida:", playlistInvertida); 
+
+// sort() - Ordena os elementos do array
+
+let numeros1 = [10, 5, 100, 50, 1];
+
+console.log("Antes do sort:", numeros1);
+
+// Ordenando os números de forma crescente
+
+let numerosOrdenadosCrescentes = numeros1.sort((a, b) => a - b);
+
+console.log("Números em ordem crescente:", numerosOrdenadosCrescentes);
+
+// Ordenando os números de forma decrescente
+
+let numerosOrdenadosDecrescentes = numeros1.sort((a, b) => b - a);
+console.log("Números em ordem decrescente:", numerosOrdenadosDecrescentes);
